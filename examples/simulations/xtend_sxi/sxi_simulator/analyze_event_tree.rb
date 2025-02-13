@@ -87,22 +87,22 @@ a1.set_time_info(time_start, exposure)
 a1.run(:all, 100000)
 
 
-a2 = DefineFrames.new
-a2.inputs = [a1.output]
-a2.output = "#{filename_base}_frame.root"
-a2.time_start = time_start
-a2.frame_exposure = frame_exposure
-a2.run(:all, 100000)
-
-
-a3 = AnalyzeFrameData.new
-a3.inputs = [a2.output]
-a3.output = "#{filename_base}_xetree.root"
-a3.event_threshold = 0.24
-a3.split_threshold = 0.09
-a3.offset_x = 0
-a3.offset_y = 0
-a3.run(:all, 1000)
+#a2 = DefineFrames.new
+#a2.inputs = [a1.output]
+#a2.output = "#{filename_base}_frame.root"
+#a2.time_start = time_start
+#a2.frame_exposure = frame_exposure
+#a2.run(:all, 100000)
+#
+#
+#a3 = AnalyzeFrameData.new
+#a3.inputs = [a2.output]
+#a3.output = "#{filename_base}_xetree.root"
+#a3.event_threshold = 0.24
+#a3.split_threshold = 0.09
+#a3.offset_x = 0
+#a3.offset_y = 0
+#a3.run(:all, 1000)
 
 #system("rm -rf #{a1.output}")
 #system("rm -rf #{a2.output}")

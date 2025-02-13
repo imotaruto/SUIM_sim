@@ -26,6 +26,7 @@
 #include <vector>
 #include <map>
 
+#include "G4TouchableHistory.hh"
 #include "IsotopeInfo.hh"
 
 class G4TouchableHistory;

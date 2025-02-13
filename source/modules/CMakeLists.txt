@@ -1,3 +1,4 @@
+
 add_definitions(-DANLNEXT_USE_TVECTOR -DANLNEXT_USE_HEPVECTOR)
 
 include_directories(
@@ -31,6 +32,7 @@ set(CS_MODULES
   src/ConstructDetectorForSimulation.cc
   src/VCSModule.cc
   src/CSHitCollection.cc
+  src/PatternGenerator.cc
   src/ConstructChannelMap.cc
   src/SetNoiseLevels.cc
   src/SetBadChannels.cc
@@ -47,6 +49,7 @@ set(CS_MODULES
   ### Frame data processes
   src/AssignTime.cc
   src/DefineFrame.cc
+  src/DefineEventDriven.cc
   src/ConstructFrame.cc
   src/FillFrame.cc
   src/LoadFrame.cc
@@ -54,6 +57,7 @@ set(CS_MODULES
   src/XrayEventCollection.cc
   src/XrayEventSelection.cc
   src/AnalyzeFrame.cc
+  src/Write3x3EventTree.cc
   src/WriteXrayEventTree.cc
   src/ReadXrayEventTree.cc
   src/SortEventTreeWithTime.cc

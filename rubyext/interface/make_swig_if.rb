@@ -47,6 +47,7 @@ clMod = [
   ANL::SWIGClass.new("ReadHitTreeAsRawHits"),
   ANL::SWIGClass.new("ReadHitTreeAsDetectorHits"),
   ANL::SWIGClass.new("WriteEventTree"),
+  ANL::SWIGClass.new("Write3x3EventTree"),
   ANL::SWIGClass.new("ReadEventTree"),
   ANL::SWIGClass.new("ReadEventTreeAsRawHits"),
   ANL::SWIGClass.new("ReadEventTreeAsDetectorHits"),
@@ -67,6 +68,7 @@ clMod = [
   ANL::SWIGClass.new("QuickAnalysisForDSD"),
   ANL::SWIGClass.new("AssignTime"),
   ANL::SWIGClass.new("DefineFrame"),
+  ANL::SWIGClass.new("DefineEventDriven")
   ANL::SWIGClass.new("MakeFrameFITS", false, 'USE_FITSIO'),
   ANL::SWIGClass.new("ConstructFrame"),
   ANL::SWIGClass.new("ConstructSXIFrame", false, 'USE_FITSIO'),
@@ -96,6 +98,7 @@ clMod = [
   ANL::SWIGClass.new("HistogramRawFrameImage"),
   ANL::SWIGClass.new("ExtractXrayEventImage"),
   ANL::SWIGClass.new("ProcessCodedAperture"),
+  ANL::SWIGClass.new("PatternGenerator")
   ANL::SWIGClass.new("PushToQuickLookDB", false, "USE_HSQUICKLOOK"),
   ANL::SWIGClass.new("PushXrayEventToQuickLookDB", false, "USE_HSQUICKLOOK"),
   ANL::SWIGClass.new("PushHistogramToQuickLookDB", false, "USE_HSQUICKLOOK"),
@@ -116,6 +119,7 @@ clSim = [
   ANL::SWIGClass.new("ListPrimaryGen"),
   ANL::SWIGClass.new("SimXPrimaryGen", false, 'USE_SIMX'),
   ANL::SWIGClass.new("AHRadiationBackgroundPrimaryGen"),
+  ANL::SWIGClass.new("AHRadiationBackgroundPrimaryGenSelectExposureTime")
   ANL::SWIGClass.new("AEObservationPrimaryGen", false, 'USE_FITSIO'),
   ANL::SWIGClass.new("CelestialSourcePrimaryGen", false, 'USE_FITSIO'),
   ANL::SWIGClass.new("AllSkyPrimaryGen", false, 'USE_HEALPIX'),

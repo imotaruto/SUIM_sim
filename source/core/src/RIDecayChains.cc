@@ -209,7 +209,7 @@ RIDecayChains::collectDecayProducts(const G4Ions* parent)
   }
   
   // decay_process_->SetVerboseLevel(2);
-  std::unique_ptr<const G4DecayTable> decayTable(decay_process_->LoadDecayTable(parent));
+    std::unique_ptr<const G4DecayTable> decayTable(decay_process_->LoadDecayTable(*parent));
 
   if (decayTable.get()==nullptr) {
     return std::list<RIDecayProperties>();

@@ -1,0 +1,46 @@
+#--------------------------------------------------
+# QDPスクリプト：3つのデータセットを1つのグラフにプロット
+#--------------------------------------------------
+
+# タイトルと軸ラベルの設定
+SET TITLE "3つのデータセットの結合プロット"
+SET XLABEL "Energy(keV)"    # 適切なラベルに変更してください
+SET YLABEL "Counts/s/keV"    # 適切なラベルに変更してください
+SET GRID
+
+# プロット範囲の設定（必要に応じて調整）
+SET VIEW XMIN=1.5 XMAX=20
+SET VIEW YMIN=0.00001 YMAX=0.1
+
+# データセット1の読み込みとスタイル設定
+READ SERR 2 combined_data.qdp
+SET SYMBOL 1       # シンボルタイプ1（例：点）
+SET COL 3          # 色1（通常は黒）
+SET LIN 1          # 線スタイル1
+SET LAB "データセット1"
+# プロット実行（オーバーレイなしで最初のデータセットをプロット）
+PLOT
+
+# データセット2の読み込みとスタイル設定
+READ SERR 2 combined_data.qdp
+SET SYMBOL 1       # シンボルタイプ2（例：円）
+SET COL 2        # 色2（通常は赤）
+SET LIN 1          # 線スタイル2
+SET LAB "データセット2"
+# プロット実行（オーバーレイで追加）
+PLOT OVER
+
+# データセット3の読み込みとスタイル設定
+READ SERR 2 combined_data.qdp
+SET SYMBOL 1     # シンボルタイプ3（例：三角形）
+SET COL 4         # 色4（通常は緑）
+SET LIN 1          # 線スタイル3
+SET LAB "データセット3"
+# プロット実行（オーバーレイで追加）
+PLOT OVER
+
+# 凡例の追加（手動）
+SET TEXT 1 "データセット1" AT 16 0.018
+SET TEXT 2 "データセット2" AT 16 0.016
+SET TEXT 3 "データセット3" AT 16 0.014
+

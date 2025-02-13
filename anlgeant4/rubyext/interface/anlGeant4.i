@@ -29,12 +29,15 @@
 #endif
 
 
+
 %}
 
 
 %import(module="anlnext/ANL") "anlnext/ruby/ANL.i"
 
 namespace anlgeant4 {
+    
+
 
 class Geant4Body : public anlnext::BasicModule
 {

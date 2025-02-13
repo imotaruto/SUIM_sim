@@ -43,7 +43,7 @@ def run_simulation(num, random, output)
     sim.set_physics(hadron_hp: false, cut_value: 0.0001,
                   customized_em: true, electron_range_ratio: 0.01, electron_final_range: 1.0e-5)
     sim.set_primary_generator :AEObservationPrimaryGen, {
-        particle: "gamma",
+        particle: "proton",
         spectral_distribution: "histogram",
         energy_array: energy_array,
         photons_array: photons_array,

@@ -227,24 +227,24 @@ void CustomizedEmLivermorePhysics::ConstructProcess()
     if (!particle) { continue; }
     if (particleName == "gamma") {
 
-      // photoelectric effect - Livermore model only
-      G4PhotoElectricEffect* thePhotoElectricEffect = new G4PhotoElectricEffect();
-      thePhotoElectricEffect->SetEmModel(new G4LivermorePhotoElectricModel());
-      ph->RegisterProcess(thePhotoElectricEffect, particle);
+//       photoelectric effect - Livermore model only
+//      G4PhotoElectricEffect* thePhotoElectricEffect = new G4PhotoElectricEffect();
+//      thePhotoElectricEffect->SetEmModel(new G4LivermorePhotoElectricModel());
+//      ph->RegisterProcess(thePhotoElectricEffect, particle);
 
       // Compton scattering - Livermore model only
-      G4ComptonScattering* theComptonScattering = new G4ComptonScattering();
-      theComptonScattering->SetEmModel(new G4LivermoreComptonModel());
-      ph->RegisterProcess(theComptonScattering, particle);
+//      G4ComptonScattering* theComptonScattering = new G4ComptonScattering();
+//      theComptonScattering->SetEmModel(new G4LivermoreComptonModel());
+//      ph->RegisterProcess(theComptonScattering, particle);
 
       // gamma conversion - Livermore model below 80 GeV
-      G4GammaConversion* theGammaConversion = new G4GammaConversion();
-      theGammaConversion->SetEmModel(new G4LivermoreGammaConversionModel());
-      ph->RegisterProcess(theGammaConversion, particle);
+//      G4GammaConversion* theGammaConversion = new G4GammaConversion();
+//      theGammaConversion->SetEmModel(new G4LivermoreGammaConversionModel());
+//      ph->RegisterProcess(theGammaConversion, particle);
 
       // default Rayleigh scattering is Livermore
-      G4RayleighScattering* theRayleigh = new G4RayleighScattering();
-      ph->RegisterProcess(theRayleigh, particle);
+//      G4RayleighScattering* theRayleigh = new G4RayleighScattering();
+//      ph->RegisterProcess(theRayleigh, particle);
 
     } else if (particleName == "e-") {
 

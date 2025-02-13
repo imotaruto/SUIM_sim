@@ -20,15 +20,33 @@
 #include "InitialInformation.hh"
 #include <anlnext/BasicModule.hh>
 
-anlgeant4::
+namespace anlgeant4 {
+
 InitialInformation::InitialInformation(bool stored, anlnext::BasicModule* mod)
-  : stored_(stored), weight_stored_(stored),
-    energy_(0.0), direction_(0.0, 0.0, -1.0),
-    time_(0.0), position_(0.0, 0.0, 0.0),
+  : stored_(stored),
+    weight_stored_(stored),
+    energy_(0.0),
+    direction_(0.0, 0.0, -1.0),
+    time_(0.0),
+    position_(0.0, 0.0, 0.0),
     polarization_(0.0, 0.0, 0.0),
-    event_id_(-1), weight_(1.0)
+    event_id_(-1),
+    weight_(1.0),
+    real_time_(0.0),
+    frame_exposure_time_(0.0),
+    delay_time_(0.0),
+    end_of_dead_reset_time_(0.0),
+    select_event_id_(-1),
+    select_event_real_time_(0.0),
+    //---------------------------------------------------------
+    // 新規追加の2変数を初期化
+    //---------------------------------------------------------
+    center_event_id_(-1),
+    center_ini_energy_(0.0)
 {
   if (mod) {
     mod->add_alias("InitialInformation");
   }
 }
+
+} // namespace anlgeant4

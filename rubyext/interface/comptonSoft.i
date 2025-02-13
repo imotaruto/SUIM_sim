@@ -4,6 +4,7 @@
 #include "ConstructDetectorForSimulation.hh"
 #include "VCSModule.hh"
 #include "CSHitCollection.hh"
+#include "PatternGenerator.hh"
 #include "ConstructChannelMap.hh"
 #include "SetNoiseLevels.hh"
 #include "SetBadChannels.hh"
@@ -41,6 +42,7 @@
 #include "ReadHitTreeAsRawHits.hh"
 #include "ReadHitTreeAsDetectorHits.hh"
 #include "WriteEventTree.hh"
+#include "Write3x3EventTree.hh"
 #include "ReadEventTree.hh"
 #include "ReadEventTreeAsRawHits.hh"
 #include "ReadEventTreeAsDetectorHits.hh"
@@ -61,6 +63,7 @@
 #include "QuickAnalysisForDSD.hh"
 #include "AssignTime.hh"
 #include "DefineFrame.hh"
+#include "DefineEventDriven.hh"
 #ifdef USE_FITSIO
 #include "MakeFrameFITS.hh"
 #endif
@@ -136,6 +139,7 @@
 #include "SimXPrimaryGen.hh"
 #endif
 #include "AHRadiationBackgroundPrimaryGen.hh"
+#include "AHRadiationBackgroundPrimaryGenSelectExposureTime.hh"
 #ifdef USE_FITSIO
 #include "AEObservationPrimaryGen.hh"
 #endif
@@ -232,6 +236,12 @@ public:
   ~CSHitCollection();
 };
 
+class PatternGenerator : public VCSModule
+{
+public:
+    PatternGenerator();
+    ~PatternGenerator();
+};
 
 class ConstructChannelMap : public VCSModule
 {
@@ -502,6 +512,14 @@ public:
   WriteHitTree();
   ~WriteHitTree() = default;
 };
+    
+class Write3x3EventTree : public VCSModule
+{
+public:
+    Write3x3EventTree();
+    ~Write3x3EventTree();
+    
+};
 
 
 class ReadHitTree : public VCSModule
@@ -695,7 +713,18 @@ public:
   ~DefineFrame();
 };
 
-
+    
+class DefineEventDriven : public VCSModule {
+public:
+    DefineEventDriven() {
+    }
+    ~DefineEventDriven() {
+    }
+    virtual std::string module_id() const override {
+        return "DefineEventDriven";
+    }
+};
+    
 #ifdef USE_FITSIO
 class MakeFrameFITS : public VCSModule
 {
@@ -1057,7 +1086,13 @@ public:
   ~AHRadiationBackgroundPrimaryGen();
 };
 
-
+class AHRadiationBackgroundPrimaryGenSelectExposureTime : public
+    anlgeant4::IsotropicPrimaryGen
+{
+public:
+    AHRadiationBackgroundPrimaryGenSelectExposureTime();
+    ~AHRadiationBackgroundPrimaryGenSelectExposureTime();
+};
 #ifdef USE_FITSIO
 class AEObservationPrimaryGen : public anlgeant4::BasicPrimaryGen
 {

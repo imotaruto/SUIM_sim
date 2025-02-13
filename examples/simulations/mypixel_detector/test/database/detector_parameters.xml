@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/odakahirokazu/ComptonSoft/master/xmlstyle/detector_parameters_v3.xsl" ?>
+
+<detector_parameters>
+  <name>Silicon pixel detector</name>
+  <comment>2024-09-05 | Adjusted for Silicon Detector</comment>
+  <auto_position flag="0" />
+  <sensitive_detector_not_found_warning flag="1" />
+  <data>
+    <sensitive_detector type="2DPixel" name="SiLayer1.log">
+      <common>
+        <parameters>
+          <upside anode="1" pixel="1" />
+          <!-- クエンチングファクターをシリコン用に調整 -->
+          <quenching factor="0.6" />
+          <!-- シリコン検出器用の標準温度 -->
+          <temperature value="303.0" />
+          <!-- 電場バイアスとモード -->
+          <efield bias="30" mode="2" param0="-15" />
+          <!-- 電荷収集のモード -->
+          <charge_collection mode="0" />
+          <diffusion mode="1">
+            <spread_factor cathode="1.0" anode="1.0" />
+          </diffusion>
+          <!-- 時間分解能 -->
+          <timing_resolution trigger="1.0e-5" energy_measurement="3.0e-4" />
+          <!-- ペデスタル信号の生成 -->
+          <pedestal_generation flag="0" />
+          <channel_properties>
+            <disable status="0" />
+         <!-- トリガーの閾値設定 -->-->-->-->
+          <trigger_discrimination center="1" sigma="1" />-->-->-->
+           <!-- シリコン検出器に合わせたノイズレベル -->-->-->
+            <noise_level param0="0.086" param1="0.0203" param2="0.0" />
+            <compensation factor="1.0" />
+            <threshold value="0.5" />
+          </channel_properties>
+          <!-- 信号の再構成方法 -->
+          <reconstruction mode="0" />
+        </parameters>
+      </common>
+      <detector_list id_method="path" layer_offset="1">
+        <detector id="1" path="SiLayer1" />
+      </detector_list>
+    </sensitive_detector>
+  </data>
+</detector_parameters>
