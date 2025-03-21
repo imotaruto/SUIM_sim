@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <!-- 定義セクション -->
+  <define>
+    <!-- シリコン層の位置を定義（ここは変更なし） -->
+    <position name="SiLayer1.pos" unit="mm" x="0" y="0" z="-0.150" />
+    <position name="SiO2Layer.pos" unit="mm" x="0" y="0" z="0.0001" />
+    <position name="SiLayer3.pos" unit="mm" x="0" y="0" z="0.0047" />
+
+    <!-- スリットの位置を 5 倍に拡大 (y 座標と z 座標をそれぞれ 5 倍) -->
+    <position name="Slit0.pos" unit="mm" x="0" y="-47.25" z="174.15" />
+    <position name="Slit1.pos" unit="mm" x="0" y="-33.75" z="174.15" />
+    <position name="Slit2.pos" unit="mm" x="0" y="-20.25" z="174.15" />
+    <position name="Slit3.pos" unit="mm" x="0" y="-6.75"  z="174.15" />
+    <position name="Slit4.pos" unit="mm" x="0" y="6.75"   z="174.15" />
+    <position name="Slit5.pos" unit="mm" x="0" y="20.25"  z="174.15" />
+    <position name="Slit6.pos" unit="mm" x="0" y="33.75"  z="174.15" />
+    <position name="Slit7.pos" unit="mm" x="0" y="47.25"  z="174.15" />
+
+    <!-- スリット用真空ボックスの位置 (y 座標はスリットと同じく 5 倍, z=24.83→124.15に拡大) -->
+    <position name="VacuumBox0.pos" unit="mm" x="0" y="-47.25" z="124.15" />
+    <position name="VacuumBox1.pos" unit="mm" x="0" y="-33.75" z="124.15" />
+    <position name="VacuumBox2.pos" unit="mm" x="0" y="-20.25" z="124.15" />
+    <position name="VacuumBox3.pos" unit="mm" x="0" y="-6.75"  z="124.15" />
+    <position name="VacuumBox4.pos" unit="mm" x="0" y="6.75"   z="124.15" />
+    <position name="VacuumBox5.pos" unit="mm" x="0" y="20.25"  z="124.15" />
+    <position name="VacuumBox6.pos" unit="mm" x="0" y="33.75"  z="124.15" />
+    <position name="VacuumBox7.pos" unit="mm" x="0" y="47.25"  z="124.15" />
+
+    <!-- その他の位置（変更なし） -->
+    <position name="VacuumBoxInsideAluminum.pos" unit="mm" x="0" y="0" z="0" />
+    <position name="AluminumBox.pos" unit="mm" x="0" y="0" z="0" />
+  </define>
+
+  <!-- 材料の定義 （変更なし）-->
+  <materials>
+    <!-- 元素の定義 -->
+    <element Z="13" name="Al">
+      <atom value="26.9815385" unit="g/mole" />
+    </element>
+    <element Z="14" name="Si">
+      <atom value="28.0855" unit="g/mole" />
+    </element>
+    <element Z="8" name="O">
+      <atom value="15.9994" unit="g/mole" />
+    </element>
+
+    <!-- 材料の定義 -->
+    <material Z="1" name="Vacuum" state="gas">
+      <D unit="g/cm3" value="1e-12" />
+      <atom unit="g/mole" value="1"/>
+    </material>
+
+    <material name="Si" state="solid">
+      <D unit="g/cm3" value="2.33" />
+      <fraction n="1.0" ref="Si" />
+    </material>
+    <material name="SiO2" formula="SiO2" state="solid">
+      <D unit="g/cm3" value="2.2" />
+      <composite n="1" ref="Si" />
+      <composite n="2" ref="O" />
+    </material>
+    <material name="Aluminum" state="solid">
+      <D unit="g/cm3" value="2.70" />
+      <fraction n="1.0" ref="Al" />
+    </material>
+  </materials>
+
+  <!-- ソリッドの定義 -->
+  <solids>
+    <!-- ワールドボックス (変更なし) -->
+    <box lunit="mm" name="World.box" x="2000.0" y="2000.0" z="2000.0" />
+
+    <!-- 各層のソリッド（変更なし） -->
+    <box lunit="mm" name="SiLayer1.box" x="10.8"  y="21.312" z="0.300" />
+    <box lunit="mm" name="SiO2Layer.box" x="10.8" y="21.312" z="0.0002" />
+    <box lunit="mm" name="SiLayer3.box" x="10.8"  y="21.312" z="0.009" />
+
+    <!-- アルミニウムボックスを 450×450×350 mm に拡大 -->
+    <box lunit="mm" name="AluminumBox.box" x="450.0" y="450.0" z="350.0" />
+
+    <!-- アルミニウムボックス内の真空領域を 410×410×310 mm に拡大 -->
+    <box lunit="mm" name="VacuumBoxInsideAluminum.box" x="410.0" y="410.0" z="310.0" />
+
+    <!-- スリットのソリッドを 5 倍に拡大: 45.0 × 0.5 × 1.75 -->
+    <box lunit="mm" name="Slit.box" x="45.0" y="0.5" z="1.75" />
+
+    <!-- スリット用真空ボックスも 5 倍に拡大: 45.0 × 11.8 × 98.3 -->
+    <box lunit="mm" name="VacuumBoxForSlits.box" x="45.0" y="11.8" z="98.3" />
+  </solids>
+
+  <!-- 構造の定義 -->
+  <structure>
+    <!-- 各層のボリューム（変更なし） -->
+    <volume name="SiLayer1.log">
+      <materialref ref="Si" />
+      <solidref ref="SiLayer1.box" />
+    </volume>
+    <volume name="SiO2Layer.log">
+      <materialref ref="SiO2" />
+      <solidref ref="SiO2Layer.box" />
+    </volume>
+    <volume name="SiLayer3.log">
+      <materialref ref="Si" />
+      <solidref ref="SiLayer3.box" />
+    </volume>
+
+    <!-- 真空ボックス（アルミボックス内）のボリューム -->
+    <volume name="VacuumBoxInsideAluminum.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="VacuumBoxInsideAluminum.box" />
+
+      <!-- シリコン層を真空ボックス内に配置（位置・サイズは変更なし） -->
+      <physvol name="SiLayer1">
+        <volumeref ref="SiLayer1.log" />
+        <positionref ref="SiLayer1.pos" />
+      </physvol>
+      <physvol name="SiO2Layer">
+        <volumeref ref="SiO2Layer.log" />
+        <positionref ref="SiO2Layer.pos" />
+      </physvol>
+      <physvol name="SiLayer3">
+        <volumeref ref="SiLayer3.log" />
+        <positionref ref="SiLayer3.pos" />
+      </physvol>
+    </volume>
+
+    <!-- アルミニウムボックスのボリューム -->
+    <volume name="AluminumBox.log">
+      <materialref ref="Aluminum" />
+      <solidref ref="AluminumBox.box" />
+
+      <!-- 真空ボックスをアルミニウムボックスに配置 -->
+      <physvol name="VacuumBoxInsideAluminum">
+        <volumeref ref="VacuumBoxInsideAluminum.log" />
+        <positionref ref="VacuumBoxInsideAluminum.pos" />
+      </physvol>
+    </volume>
+
+    <!-- スリットのボリューム（材質は真空のまま） -->
+    <volume name="Slit.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="Slit.box" />
+    </volume>
+
+    <!-- スリット用真空ボックスのボリューム -->
+    <volume name="VacuumBoxForSlits.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="VacuumBoxForSlits.box" />
+    </volume>
+
+    <!-- ワールドのボリューム -->
+    <volume name="World.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="World.box" />
+
+      <!-- アルミニウムボックスをワールドに配置 -->
+      <physvol name="AluminumBox">
+        <volumeref ref="AluminumBox.log" />
+        <positionref ref="AluminumBox.pos" />
+      </physvol>
+
+      <!-- スリットと真空ボックスをワールドに配置 (位置を 5 倍に拡大) -->
+      <!-- スリット0 -->
+      <physvol name="Slit0">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit0.pos" />
+      </physvol>
+      <physvol name="VacuumBox0">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox0.pos" />
+      </physvol>
+
+      <!-- スリット1 -->
+      <physvol name="Slit1">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit1.pos" />
+      </physvol>
+      <physvol name="VacuumBox1">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox1.pos" />
+      </physvol>
+
+      <!-- スリット2 -->
+      <physvol name="Slit2">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit2.pos" />
+      </physvol>
+      <physvol name="VacuumBox2">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox2.pos" />
+      </physvol>
+
+      <!-- スリット3 -->
+      <physvol name="Slit3">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit3.pos" />
+      </physvol>
+      <physvol name="VacuumBox3">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox3.pos" />
+      </physvol>
+
+      <!-- スリット4 -->
+      <physvol name="Slit4">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit4.pos" />
+      </physvol>
+      <physvol name="VacuumBox4">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox4.pos" />
+      </physvol>
+
+      <!-- スリット5 -->
+      <physvol name="Slit5">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit5.pos" />
+      </physvol>
+      <physvol name="VacuumBox5">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox5.pos" />
+      </physvol>
+
+      <!-- スリット6 -->
+      <physvol name="Slit6">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit6.pos" />
+      </physvol>
+      <physvol name="VacuumBox6">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox6.pos" />
+      </physvol>
+
+      <!-- スリット7 -->
+      <physvol name="Slit7">
+        <volumeref ref="Slit.log" />
+        <positionref ref="Slit7.pos" />
+      </physvol>
+      <physvol name="VacuumBox7">
+        <volumeref ref="VacuumBoxForSlits.log" />
+        <positionref ref="VacuumBox7.pos" />
+      </physvol>
+    </volume>
+  </structure>
+
+  <!-- セットアップの定義 -->
+  <setup name="Default" version="1.0">
+    <world ref="World.log" />
+  </setup>
+</gdml>

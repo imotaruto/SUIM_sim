@@ -226,6 +226,7 @@
 /Users/itoyamato/include/comptonsoft/OutputSimXPrimaries.hh
 /Users/itoyamato/include/comptonsoft/AHRadiationBackgroundPrimaryGenSelectExposureTime.hh
 /Users/itoyamato/include/comptonsoft/ActivationUserActionAssembly.hh
+/Users/itoyamato/include/comptonsoft/MyTextOutputModule.hh
 /Users/itoyamato/include/comptonsoft/AssignG4CopyNumber.hh
 /Users/itoyamato/include/comptonsoft/DumpMass.hh
 /Users/itoyamato/include/comptonsoft/SimXIF.hh

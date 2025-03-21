@@ -1,8 +1,0 @@
-read "output.dat"
-define x = 1
-define y = 2
-define dy = 3
-set label 1 "X軸"
-set label 2 "Y軸"
-set title "X対Yのプロット"
-pl x:y:dy w error lc rgb "blue" pt 7

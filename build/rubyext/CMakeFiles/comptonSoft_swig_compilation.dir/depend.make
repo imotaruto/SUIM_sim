@@ -183,6 +183,7 @@ rubyext/CMakeFiles/comptonSoft.dir/comptonSoftRUBY.stamp: \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/GenerateSimXEvent.hh \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/InitialParticleTree.hh \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ListPrimaryGen.hh \
+ /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/MyTextOutputModule.hh \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationPickUpData.hh \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationTreeIO.hh \
  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationTreeIOWithInitialInfo.hh \

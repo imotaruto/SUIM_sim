@@ -1626,6 +1626,7 @@ rubyext/CMakeFiles/comptonSoft.dir/CMakeFiles/comptonSoft.dir/comptonSoftRUBY_wr
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/CreateRootFile.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/SaveData.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/ReadDataFile.hh \
+  /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/simulation/include/MyTextOutputModule.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/ReadDataFile_VME3.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/ReadDataFile_SpW2.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/../source/modules/include/ReadDataFile_NT.hh \

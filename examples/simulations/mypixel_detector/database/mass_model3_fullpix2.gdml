@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <!-- 定義セクション -->
+  <define>
+    <!-- 各層の位置を定義 -->
+    <!-- 300µmのシリコン層の中心位置 -->
+    <position name="SiLayer1.pos" unit="mm" x="0" y="0" z="-0.150" />
+    <!-- 0.2µmのSiO₂層の中心位置 -->
+    <position name="SiO2Layer.pos" unit="mm" x="0" y="0" z="0.0001" />
+    <!-- 9µmのシリコン層の中心位置 -->
+    <position name="SiLayer3.pos" unit="mm" x="0" y="0" z="0.0047" />
+
+    <!-- 真空ボックスの中心位置 -->
+    <position name="VacuumBox.pos" unit="mm" x="0" y="0" z="0" />
+
+    <!-- アルミボックスの中心位置 -->
+    <position name="AluminumBox.pos" unit="mm" x="0" y="0" z="0" />
+  </define>
+
+  <!-- 材料の定義 -->
+  <materials>
+    <!-- 元素の定義 -->
+    <element Z="13" name="Al">
+      <atom value="26.9815385" unit="g/mole" />
+    </element>
+    <element Z="14" name="Si">
+      <atom value="28.0855" unit="g/mole" />
+    </element>
+    <element Z="8" name="O">
+      <atom value="15.9994" unit="g/mole" />
+    </element>
+
+    <!-- 材料の定義 -->
+    <material Z="1" name="Vacuum" state="gas">
+        <D unit="g/cm3" value="1e-12" />
+        <atom unit="g/mole" value="1"/>
+    </material>
+    <material name="Si" state="solid">
+      <D unit="g/cm3" value="2.33" />
+      <fraction n="1.0" ref="Si" />
+    </material>
+    <material name="SiO2" formula="SiO2" state="solid">
+      <D unit="g/cm3" value="2.2" />
+      <composite n="1" ref="Si" />
+      <composite n="2" ref="O" />
+    </material>
+    <material name="Aluminum" state="solid">
+      <D unit="g/cm3" value="2.70" />
+      <fraction n="1.0" ref="Al" />
+    </material>
+  </materials>
+
+  <!-- ソリッドの定義 -->
+  <solids>
+    <!-- ワールドボックス -->
+    <box lunit="mm" name="World.box" x="2000.0" y="2000.0" z="2000.0" />
+
+    <!-- 各層のソリッド -->
+    <!-- 300µmのシリコン層 -->
+    <!-- 300µmのシリコン層 -->
+    <box lunit="mm" name="SiLayer1.box" x="13.248" y="21.312" z="0.300" />
+    <!-- 0.2µmのSiO₂層 -->
+    <box lunit="mm" name="SiO2Layer.box" x="13.248" y="21.312" z="0.0002" />
+    <!-- 9µmのシリコン層 -->
+    <box lunit="mm" name="SiLayer3.box" x="13.248" y="21.312" z="0.009" />
+
+    <!-- 真空ボックス -->
+    <box lunit="mm" name="VacuumBox.box" x="460.0" y="460.0" z="460.0" />
+
+    <!-- アルミボックス（外側） -->
+    <box lunit="mm" name="AluminumBoxOuter.box" x="500.0" y="500.0" z="500.0" />
+    <!-- アルミボックス（内側、真空ボックスのサイズと同じ） -->
+    <box lunit="mm" name="AluminumBoxInner.box" x="460.0" y="460.0" z="460.0" />
+    <!-- アルミの厚さを持つボックス -->
+    <subtraction name="AluminumBox.box">
+      <first ref="AluminumBoxOuter.box" />
+      <second ref="AluminumBoxInner.box" />
+      <positionref ref="VacuumBox.pos" />
+    </subtraction>
+  </solids>
+
+  <!-- 構造の定義 -->
+  <structure>
+    <!-- 各層のボリューム -->
+    <volume name="SiLayer1.log">
+      <materialref ref="Si" />
+      <solidref ref="SiLayer1.box" />
+    </volume>
+    <volume name="SiO2Layer.log">
+      <materialref ref="SiO2" />
+      <solidref ref="SiO2Layer.box" />
+    </volume>
+    <volume name="SiLayer3.log">
+      <materialref ref="Si" />
+      <solidref ref="SiLayer3.box" />
+    </volume>
+
+    <!-- 真空ボックスのボリューム -->
+    <volume name="VacuumBox.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="VacuumBox.box" />
+
+      <!-- ディテクターを真空ボックスに配置 -->
+      <physvol name="SiLayer1">
+        <volumeref ref="SiLayer1.log" />
+        <positionref ref="SiLayer1.pos" />
+      </physvol>
+      <physvol name="SiO2Layer">
+        <volumeref ref="SiO2Layer.log" />
+        <positionref ref="SiO2Layer.pos" />
+      </physvol>
+      <physvol name="SiLayer3">
+        <volumeref ref="SiLayer3.log" />
+        <positionref ref="SiLayer3.pos" />
+      </physvol>
+    </volume>
+
+    <!-- アルミボックスのボリューム -->
+    <volume name="AluminumBox.log">
+      <materialref ref="Aluminum" />
+      <solidref ref="AluminumBox.box" />
+
+      <!-- 真空ボックスをアルミボックスに配置 -->
+      <physvol name="VacuumBox">
+        <volumeref ref="VacuumBox.log" />
+        <positionref ref="VacuumBox.pos" />
+      </physvol>
+    </volume>
+
+    <!-- ワールドのボリューム -->
+    <volume name="World.log">
+      <materialref ref="Vacuum" />
+      <solidref ref="World.box" />
+
+      <!-- アルミボックスをワールドに配置 -->
+      <physvol name="AluminumBox">
+        <volumeref ref="AluminumBox.log" />
+        <positionref ref="AluminumBox.pos" />
+      </physvol>
+    </volume>
+  </structure>
+
+  <!-- セットアップの定義 -->
+  <setup name="Default" version="1.0">
+    <world ref="World.log" />
+  </setup>
+</gdml>

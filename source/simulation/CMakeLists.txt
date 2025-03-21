@@ -50,6 +50,7 @@ set(CS_SIMULATION_CLASSES_BASIC
   src/ObservationTreeIO.cc
   src/ObservationTreeIOWithInitialInfo.cc
   src/WriteObservationTree.cc
+  src/MyTextOutputModule.cc
   )
 
 if(CS_USE_FITSIO)

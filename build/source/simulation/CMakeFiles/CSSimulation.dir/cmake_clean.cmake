@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CSSimulation.dir/src/InitialParticleTree.cc.o.d"
   "CMakeFiles/CSSimulation.dir/src/ListPrimaryGen.cc.o"
   "CMakeFiles/CSSimulation.dir/src/ListPrimaryGen.cc.o.d"
+  "CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o"
+  "CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o.d"
   "CMakeFiles/CSSimulation.dir/src/ObservationPickUpData.cc.o"
   "CMakeFiles/CSSimulation.dir/src/ObservationPickUpData.cc.o.d"
   "CMakeFiles/CSSimulation.dir/src/ObservationTreeIO.cc.o"

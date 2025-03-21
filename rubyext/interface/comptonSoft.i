@@ -21,6 +21,7 @@
 #include "CreateRootFile.hh"
 #include "SaveData.hh"
 #include "ReadDataFile.hh"
+#include "MyTextOutputModule.hh"
 #include "ReadDataFile_VME3.hh"
 #include "ReadDataFile_SpW2.hh"
 #include "ReadDataFile_NT.hh"
@@ -1025,6 +1026,14 @@ public:
 
 #endif
 
+    class MyTextOutputModule : public anlnext::BasicModule
+    {
+    public:
+        MyTextOutputModule();
+      ~MyTextOutputModule();
+    };
+    
+    
 #ifdef USE_FITSIO
 class SelectEventsWithCelestialSpectrum : public anlnext::BasicModule
 {

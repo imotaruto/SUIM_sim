@@ -105,6 +105,8 @@ SaveData.hh
 /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/interface/SaveData.hh
 ReadDataFile.hh
 /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/interface/ReadDataFile.hh
+MyTextOutputModule.hh
+/Users/itoyamato/Downloads/software/ComptonSoft/rubyext/interface/MyTextOutputModule.hh
 ReadDataFile_VME3.hh
 /Users/itoyamato/Downloads/software/ComptonSoft/rubyext/interface/ReadDataFile_VME3.hh
 ReadDataFile_SpW2.hh
@@ -1664,6 +1666,14 @@ VCSModule.hh
 BasicPrimaryGen.hh
 /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/BasicPrimaryGen.hh
 memory
+-
+
+/Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/MyTextOutputModule.hh
+anlnext/BasicModule.hh
+-
+fstream
+-
+string
 -
 
 /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationPickUpData.hh

@@ -1970,79 +1970,80 @@ int SWIG_Ruby_arity( VALUE proc, int minimal )
 #define SWIGTYPE_p_comptonsoft__MakeDetectorHits swig_types[76]
 #define SWIGTYPE_p_comptonsoft__MakeDetectorHitsWithTimingProcess swig_types[77]
 #define SWIGTYPE_p_comptonsoft__MakeRawHits swig_types[78]
-#define SWIGTYPE_p_comptonsoft__ObservationPickUpData swig_types[79]
-#define SWIGTYPE_p_comptonsoft__PatternGenerator swig_types[80]
-#define SWIGTYPE_p_comptonsoft__PhysicsListManager swig_types[81]
-#define SWIGTYPE_p_comptonsoft__ProcessCodedAperture swig_types[82]
-#define SWIGTYPE_p_comptonsoft__QuickAnalysisForDSD swig_types[83]
-#define SWIGTYPE_p_comptonsoft__RIDecayCalculation swig_types[84]
-#define SWIGTYPE_p_comptonsoft__RadioactiveDecayUserActionAssembly swig_types[85]
-#define SWIGTYPE_p_comptonsoft__ReadComptonEventTree swig_types[86]
-#define SWIGTYPE_p_comptonsoft__ReadDataFile swig_types[87]
-#define SWIGTYPE_p_comptonsoft__ReadDataFile_NB0 swig_types[88]
-#define SWIGTYPE_p_comptonsoft__ReadDataFile_NT swig_types[89]
-#define SWIGTYPE_p_comptonsoft__ReadDataFile_SpW2 swig_types[90]
-#define SWIGTYPE_p_comptonsoft__ReadDataFile_VME3 swig_types[91]
-#define SWIGTYPE_p_comptonsoft__ReadEventTree swig_types[92]
-#define SWIGTYPE_p_comptonsoft__ReadEventTreeAsDetectorHits swig_types[93]
-#define SWIGTYPE_p_comptonsoft__ReadEventTreeAsRawHits swig_types[94]
-#define SWIGTYPE_p_comptonsoft__ReadHitTree swig_types[95]
-#define SWIGTYPE_p_comptonsoft__ReadHitTreeAsDetectorHits swig_types[96]
-#define SWIGTYPE_p_comptonsoft__ReadHitTreeAsRawHits swig_types[97]
-#define SWIGTYPE_p_comptonsoft__ReadXrayEventTree swig_types[98]
-#define SWIGTYPE_p_comptonsoft__RecalculateEPI swig_types[99]
-#define SWIGTYPE_p_comptonsoft__RecalculateSimulationNoise swig_types[100]
-#define SWIGTYPE_p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggered swig_types[101]
-#define SWIGTYPE_p_comptonsoft__ResponseMatrix swig_types[102]
-#define SWIGTYPE_p_comptonsoft__SampleOpticalDepth swig_types[103]
-#define SWIGTYPE_p_comptonsoft__SaveData swig_types[104]
-#define SWIGTYPE_p_comptonsoft__ScatteringPickUpData swig_types[105]
-#define SWIGTYPE_p_comptonsoft__SelectEventsOnFocalPlane swig_types[106]
-#define SWIGTYPE_p_comptonsoft__SelectEventsWithDetectorSpectrum swig_types[107]
-#define SWIGTYPE_p_comptonsoft__SelectFullDeposit swig_types[108]
-#define SWIGTYPE_p_comptonsoft__SelectHits swig_types[109]
-#define SWIGTYPE_p_comptonsoft__SelectTime swig_types[110]
-#define SWIGTYPE_p_comptonsoft__SetBadChannels swig_types[111]
-#define SWIGTYPE_p_comptonsoft__SetBadFrames swig_types[112]
-#define SWIGTYPE_p_comptonsoft__SetChannelProperties swig_types[113]
-#define SWIGTYPE_p_comptonsoft__SetDynamicPedestals swig_types[114]
-#define SWIGTYPE_p_comptonsoft__SetNoiseLevels swig_types[115]
-#define SWIGTYPE_p_comptonsoft__SetPedestalsByMedian swig_types[116]
-#define SWIGTYPE_p_comptonsoft__SimulateCXBShieldPlate swig_types[117]
-#define SWIGTYPE_p_comptonsoft__SortEventTreeWithTime swig_types[118]
-#define SWIGTYPE_p_comptonsoft__UniformlyRandomizeEPI swig_types[119]
-#define SWIGTYPE_p_comptonsoft__VCSModule swig_types[120]
-#define SWIGTYPE_p_comptonsoft__WeightByInitialDirection swig_types[121]
-#define SWIGTYPE_p_comptonsoft__Write3x3EventTree swig_types[122]
-#define SWIGTYPE_p_comptonsoft__WriteBadPixels swig_types[123]
-#define SWIGTYPE_p_comptonsoft__WriteComptonEventTree swig_types[124]
-#define SWIGTYPE_p_comptonsoft__WriteEventTree swig_types[125]
-#define SWIGTYPE_p_comptonsoft__WriteHitTree swig_types[126]
-#define SWIGTYPE_p_comptonsoft__WriteObservationTree swig_types[127]
-#define SWIGTYPE_p_comptonsoft__WriteXrayEventTree swig_types[128]
-#define SWIGTYPE_p_comptonsoft__XrayEventCollection swig_types[129]
-#define SWIGTYPE_p_comptonsoft__XrayEventSelection swig_types[130]
-#define SWIGTYPE_p_difference_type swig_types[131]
-#define SWIGTYPE_p_first_type swig_types[132]
-#define SWIGTYPE_p_int swig_types[133]
-#define SWIGTYPE_p_long_long swig_types[134]
-#define SWIGTYPE_p_second_type swig_types[135]
-#define SWIGTYPE_p_short swig_types[136]
-#define SWIGTYPE_p_signed_char swig_types[137]
-#define SWIGTYPE_p_size_type swig_types[138]
-#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t swig_types[139]
-#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t__const_iterator swig_types[140]
-#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t__iterator swig_types[141]
-#define SWIGTYPE_p_std__shared_ptrT_anlnext__VModuleParameter_t swig_types[142]
-#define SWIGTYPE_p_std__vectorT_std__pairT_double_double_t_t swig_types[143]
-#define SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_t swig_types[144]
-#define SWIGTYPE_p_unsigned_char swig_types[145]
-#define SWIGTYPE_p_unsigned_int swig_types[146]
-#define SWIGTYPE_p_unsigned_long_long swig_types[147]
-#define SWIGTYPE_p_unsigned_short swig_types[148]
-#define SWIGTYPE_p_value_type swig_types[149]
-static swig_type_info *swig_types[151];
-static swig_module_info swig_module = {swig_types, 150, 0, 0, 0, 0};
+#define SWIGTYPE_p_comptonsoft__MyTextOutputModule swig_types[79]
+#define SWIGTYPE_p_comptonsoft__ObservationPickUpData swig_types[80]
+#define SWIGTYPE_p_comptonsoft__PatternGenerator swig_types[81]
+#define SWIGTYPE_p_comptonsoft__PhysicsListManager swig_types[82]
+#define SWIGTYPE_p_comptonsoft__ProcessCodedAperture swig_types[83]
+#define SWIGTYPE_p_comptonsoft__QuickAnalysisForDSD swig_types[84]
+#define SWIGTYPE_p_comptonsoft__RIDecayCalculation swig_types[85]
+#define SWIGTYPE_p_comptonsoft__RadioactiveDecayUserActionAssembly swig_types[86]
+#define SWIGTYPE_p_comptonsoft__ReadComptonEventTree swig_types[87]
+#define SWIGTYPE_p_comptonsoft__ReadDataFile swig_types[88]
+#define SWIGTYPE_p_comptonsoft__ReadDataFile_NB0 swig_types[89]
+#define SWIGTYPE_p_comptonsoft__ReadDataFile_NT swig_types[90]
+#define SWIGTYPE_p_comptonsoft__ReadDataFile_SpW2 swig_types[91]
+#define SWIGTYPE_p_comptonsoft__ReadDataFile_VME3 swig_types[92]
+#define SWIGTYPE_p_comptonsoft__ReadEventTree swig_types[93]
+#define SWIGTYPE_p_comptonsoft__ReadEventTreeAsDetectorHits swig_types[94]
+#define SWIGTYPE_p_comptonsoft__ReadEventTreeAsRawHits swig_types[95]
+#define SWIGTYPE_p_comptonsoft__ReadHitTree swig_types[96]
+#define SWIGTYPE_p_comptonsoft__ReadHitTreeAsDetectorHits swig_types[97]
+#define SWIGTYPE_p_comptonsoft__ReadHitTreeAsRawHits swig_types[98]
+#define SWIGTYPE_p_comptonsoft__ReadXrayEventTree swig_types[99]
+#define SWIGTYPE_p_comptonsoft__RecalculateEPI swig_types[100]
+#define SWIGTYPE_p_comptonsoft__RecalculateSimulationNoise swig_types[101]
+#define SWIGTYPE_p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggered swig_types[102]
+#define SWIGTYPE_p_comptonsoft__ResponseMatrix swig_types[103]
+#define SWIGTYPE_p_comptonsoft__SampleOpticalDepth swig_types[104]
+#define SWIGTYPE_p_comptonsoft__SaveData swig_types[105]
+#define SWIGTYPE_p_comptonsoft__ScatteringPickUpData swig_types[106]
+#define SWIGTYPE_p_comptonsoft__SelectEventsOnFocalPlane swig_types[107]
+#define SWIGTYPE_p_comptonsoft__SelectEventsWithDetectorSpectrum swig_types[108]
+#define SWIGTYPE_p_comptonsoft__SelectFullDeposit swig_types[109]
+#define SWIGTYPE_p_comptonsoft__SelectHits swig_types[110]
+#define SWIGTYPE_p_comptonsoft__SelectTime swig_types[111]
+#define SWIGTYPE_p_comptonsoft__SetBadChannels swig_types[112]
+#define SWIGTYPE_p_comptonsoft__SetBadFrames swig_types[113]
+#define SWIGTYPE_p_comptonsoft__SetChannelProperties swig_types[114]
+#define SWIGTYPE_p_comptonsoft__SetDynamicPedestals swig_types[115]
+#define SWIGTYPE_p_comptonsoft__SetNoiseLevels swig_types[116]
+#define SWIGTYPE_p_comptonsoft__SetPedestalsByMedian swig_types[117]
+#define SWIGTYPE_p_comptonsoft__SimulateCXBShieldPlate swig_types[118]
+#define SWIGTYPE_p_comptonsoft__SortEventTreeWithTime swig_types[119]
+#define SWIGTYPE_p_comptonsoft__UniformlyRandomizeEPI swig_types[120]
+#define SWIGTYPE_p_comptonsoft__VCSModule swig_types[121]
+#define SWIGTYPE_p_comptonsoft__WeightByInitialDirection swig_types[122]
+#define SWIGTYPE_p_comptonsoft__Write3x3EventTree swig_types[123]
+#define SWIGTYPE_p_comptonsoft__WriteBadPixels swig_types[124]
+#define SWIGTYPE_p_comptonsoft__WriteComptonEventTree swig_types[125]
+#define SWIGTYPE_p_comptonsoft__WriteEventTree swig_types[126]
+#define SWIGTYPE_p_comptonsoft__WriteHitTree swig_types[127]
+#define SWIGTYPE_p_comptonsoft__WriteObservationTree swig_types[128]
+#define SWIGTYPE_p_comptonsoft__WriteXrayEventTree swig_types[129]
+#define SWIGTYPE_p_comptonsoft__XrayEventCollection swig_types[130]
+#define SWIGTYPE_p_comptonsoft__XrayEventSelection swig_types[131]
+#define SWIGTYPE_p_difference_type swig_types[132]
+#define SWIGTYPE_p_first_type swig_types[133]
+#define SWIGTYPE_p_int swig_types[134]
+#define SWIGTYPE_p_long_long swig_types[135]
+#define SWIGTYPE_p_second_type swig_types[136]
+#define SWIGTYPE_p_short swig_types[137]
+#define SWIGTYPE_p_signed_char swig_types[138]
+#define SWIGTYPE_p_size_type swig_types[139]
+#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t swig_types[140]
+#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t__const_iterator swig_types[141]
+#define SWIGTYPE_p_std__listT_std__shared_ptrT_anlnext__VModuleParameter_t_t__iterator swig_types[142]
+#define SWIGTYPE_p_std__shared_ptrT_anlnext__VModuleParameter_t swig_types[143]
+#define SWIGTYPE_p_std__vectorT_std__pairT_double_double_t_t swig_types[144]
+#define SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_t swig_types[145]
+#define SWIGTYPE_p_unsigned_char swig_types[146]
+#define SWIGTYPE_p_unsigned_int swig_types[147]
+#define SWIGTYPE_p_unsigned_long_long swig_types[148]
+#define SWIGTYPE_p_unsigned_short swig_types[149]
+#define SWIGTYPE_p_value_type swig_types[150]
+static swig_type_info *swig_types[152];
+static swig_module_info swig_module = {swig_types, 151, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2133,6 +2134,7 @@ template <typename T> T SwigValueInit() {
 #include "CreateRootFile.hh"
 #include "SaveData.hh"
 #include "ReadDataFile.hh"
+#include "MyTextOutputModule.hh"
 #include "ReadDataFile_VME3.hh"
 #include "ReadDataFile_SpW2.hh"
 #include "ReadDataFile_NT.hh"
@@ -7120,6 +7122,44 @@ free_comptonsoft_SelectEventsWithDetectorSpectrum(void *self) {
     delete arg1;
 }
 
+static swig_class SwigClassMyTextOutputModule;
+
+SWIGINTERN VALUE
+#ifdef HAVE_RB_DEFINE_ALLOC_FUNC
+_wrap_MyTextOutputModule_allocate(VALUE self)
+#else
+_wrap_MyTextOutputModule_allocate(int argc, VALUE *argv, VALUE self)
+#endif
+{
+  VALUE vresult = SWIG_NewClassInstance(self, SWIGTYPE_p_comptonsoft__MyTextOutputModule);
+#ifndef HAVE_RB_DEFINE_ALLOC_FUNC
+  rb_obj_call_init(vresult, argc, argv);
+#endif
+  return vresult;
+}
+
+
+SWIGINTERN VALUE
+_wrap_new_MyTextOutputModule(int argc, VALUE *argv, VALUE self) {
+  comptonsoft::MyTextOutputModule *result = 0 ;
+  
+  if ((argc < 0) || (argc > 0)) {
+    rb_raise(rb_eArgError, "wrong # of arguments(%d for 0)",argc); SWIG_fail;
+  }
+  result = (comptonsoft::MyTextOutputModule *)new comptonsoft::MyTextOutputModule();
+  DATA_PTR(self) = result;
+  return self;
+fail:
+  return Qnil;
+}
+
+
+SWIGINTERN void
+free_comptonsoft_MyTextOutputModule(void *self) {
+    comptonsoft::MyTextOutputModule *arg1 = (comptonsoft::MyTextOutputModule *)self;
+    delete arg1;
+}
+
 static swig_class SwigClassExtractPhotoelectronTrajectory;
 
 SWIGINTERN VALUE
@@ -8120,6 +8160,9 @@ static void *_p_comptonsoft__MakeDetectorHitsWithTimingProcessTo_p_anlnext__Basi
 static void *_p_comptonsoft__MakeRawHitsTo_p_anlnext__BasicModule(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((anlnext::BasicModule *) (comptonsoft::VCSModule *)(comptonsoft::SelectHits *) ((comptonsoft::MakeRawHits *) x));
 }
+static void *_p_comptonsoft__MyTextOutputModuleTo_p_anlnext__BasicModule(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((anlnext::BasicModule *)  ((comptonsoft::MyTextOutputModule *) x));
+}
 static void *_p_comptonsoft__ObservationPickUpDataTo_p_anlnext__BasicModule(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((anlnext::BasicModule *) (anlgeant4::VUserActionAssembly *)(anlgeant4::VAppendableUserActionAssembly *) ((comptonsoft::ObservationPickUpData *) x));
 }
@@ -8649,6 +8692,7 @@ static swig_type_info _swigt__p_comptonsoft__LoadRootFrame = {"_p_comptonsoft__L
 static swig_type_info _swigt__p_comptonsoft__MakeDetectorHits = {"_p_comptonsoft__MakeDetectorHits", "comptonsoft::MakeDetectorHits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess = {"_p_comptonsoft__MakeDetectorHitsWithTimingProcess", "comptonsoft::MakeDetectorHitsWithTimingProcess *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_comptonsoft__MakeRawHits = {"_p_comptonsoft__MakeRawHits", "comptonsoft::MakeRawHits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_comptonsoft__MyTextOutputModule = {"_p_comptonsoft__MyTextOutputModule", "comptonsoft::MyTextOutputModule *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_comptonsoft__ObservationPickUpData = {"_p_comptonsoft__ObservationPickUpData", "comptonsoft::ObservationPickUpData *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_comptonsoft__PatternGenerator = {"_p_comptonsoft__PatternGenerator", "comptonsoft::PatternGenerator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_comptonsoft__PhysicsListManager = {"_p_comptonsoft__PhysicsListManager", "comptonsoft::PhysicsListManager *", 0, 0, (void*)0, 0};
@@ -8801,6 +8845,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_comptonsoft__MakeDetectorHits,
   &_swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess,
   &_swigt__p_comptonsoft__MakeRawHits,
+  &_swigt__p_comptonsoft__MyTextOutputModule,
   &_swigt__p_comptonsoft__ObservationPickUpData,
   &_swigt__p_comptonsoft__PatternGenerator,
   &_swigt__p_comptonsoft__PhysicsListManager,
@@ -8893,7 +8938,7 @@ static swig_cast_info _swigc__p_anlgeant4__VUserActionAssembly[] = {  {&_swigt__
 static swig_cast_info _swigc__p_anlgeant4__Geant4Body[] = {{&_swigt__p_anlgeant4__Geant4Body, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_anlgeant4__Geant4Simple[] = {{&_swigt__p_anlgeant4__Geant4Simple, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_anlgeant4__VANLGeometry[] = {{&_swigt__p_anlgeant4__VANLGeometry, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_anlnext__BasicModule[] = {  {&_swigt__p_anlnext__BasicModule, 0, 0, 0},  {&_swigt__p_anlgeant4__BasicPrimaryGen, _p_anlgeant4__BasicPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__GaussianBeamPrimaryGen, _p_anlgeant4__GaussianBeamPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__Geant4Body, _p_anlgeant4__Geant4BodyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__Geant4Simple, _p_anlgeant4__Geant4SimpleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__IsotropicPrimaryGen, _p_anlgeant4__IsotropicPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__NucleusPrimaryGen, _p_anlgeant4__NucleusPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__NucleusPrimaryGenInVolume, _p_anlgeant4__NucleusPrimaryGenInVolumeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PlaneWavePrimaryGen, _p_anlgeant4__PlaneWavePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PlaneWaveRectanglePrimaryGen, _p_anlgeant4__PlaneWaveRectanglePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PointSourcePrimaryGen, _p_anlgeant4__PointSourcePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PrimaryGenUniformSourceInVolume, _p_anlgeant4__PrimaryGenUniformSourceInVolumeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__StandardUserActionAssembly, _p_anlgeant4__StandardUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLGeometry, _p_anlgeant4__VANLGeometryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLPhysicsList, _p_anlgeant4__VANLPhysicsListTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLPrimaryGen, _p_anlgeant4__VANLPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VAppendableUserActionAssembly, _p_anlgeant4__VAppendableUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VMasterUserActionAssembly, _p_anlgeant4__VMasterUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VUserActionAssembly, _p_anlgeant4__VUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGen, _p_comptonsoft__AHRadiationBackgroundPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTime, _p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ActivationUserActionAssembly, _p_comptonsoft__ActivationUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeDarkFrame, _p_comptonsoft__AnalyzeDarkFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeFrame, _p_comptonsoft__AnalyzeFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeHits, _p_comptonsoft__AnalyzeHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ApplyEPICompensation, _p_comptonsoft__ApplyEPICompensationTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AssignG4CopyNumber, _p_comptonsoft__AssignG4CopyNumberTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AssignTime, _p_comptonsoft__AssignTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__BackProjection, _p_comptonsoft__BackProjectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__BackProjectionSky, _p_comptonsoft__BackProjectionSkyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CSHitCollection, _p_comptonsoft__CSHitCollectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CalculatePedestalLevels, _p_comptonsoft__CalculatePedestalLevelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ComptonEventFilter, _p_comptonsoft__ComptonEventFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ComptonModeFilter, _p_comptonsoft__ComptonModeFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructChannelMap, _p_comptonsoft__ConstructChannelMapTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructDetector, _p_comptonsoft__ConstructDetectorTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructDetectorForSimulation, _p_comptonsoft__ConstructDetectorForSimulationTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructFrame, _p_comptonsoft__ConstructFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CorrectPHA, _p_comptonsoft__CorrectPHATo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CreateRootFile, _p_comptonsoft__CreateRootFileTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DefineEventDriven, _p_comptonsoft__DefineEventDrivenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DefineFrame, _p_comptonsoft__DefineFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DetectBadFrames, _p_comptonsoft__DetectBadFramesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DumpMass, _p_comptonsoft__DumpMassTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EfficiencyMapSky, _p_comptonsoft__EfficiencyMapSkyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EventReconstruction, _p_comptonsoft__EventReconstructionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EventSelection, _p_comptonsoft__EventSelectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ExtractPhotoelectronTrajectory, _p_comptonsoft__ExtractPhotoelectronTrajectoryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ExtractXrayEventImage, _p_comptonsoft__ExtractXrayEventImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__FillFrame, _p_comptonsoft__FillFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__FilterByGoodTimeIntervals, _p_comptonsoft__FilterByGoodTimeIntervalsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__GetInputFilesFromDirectory, _p_comptonsoft__GetInputFilesFromDirectoryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HXIEventSelection, _p_comptonsoft__HXIEventSelectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__Histogram2DDeltaEnergyWithARM, _p_comptonsoft__Histogram2DDeltaEnergyWithARMTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramARM, _p_comptonsoft__HistogramARMTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramARMByPositionMeasurement, _p_comptonsoft__HistogramARMByPositionMeasurementTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramAzimuthAngle, _p_comptonsoft__HistogramAzimuthAngleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramDecodedImage, _p_comptonsoft__HistogramDecodedImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergy1D, _p_comptonsoft__HistogramEnergy1DTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergy2D, _p_comptonsoft__HistogramEnergy2DTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergySpectrum, _p_comptonsoft__HistogramEnergySpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramFramePedestal, _p_comptonsoft__HistogramFramePedestalTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramPHA, _p_comptonsoft__HistogramPHATo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramRawFrameImage, _p_comptonsoft__HistogramRawFrameImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventAzimuthAngle, _p_comptonsoft__HistogramXrayEventAzimuthAngleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventProperties, _p_comptonsoft__HistogramXrayEventPropertiesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventSpectrum, _p_comptonsoft__HistogramXrayEventSpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__InitialConditionFilter, _p_comptonsoft__InitialConditionFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__InitialParticleTree, _p_comptonsoft__InitialParticleTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ListPrimaryGen, _p_comptonsoft__ListPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadFrame, _p_comptonsoft__LoadFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadReducedFrame, _p_comptonsoft__LoadReducedFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadRootFrame, _p_comptonsoft__LoadRootFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeDetectorHits, _p_comptonsoft__MakeDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess, _p_comptonsoft__MakeDetectorHitsWithTimingProcessTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeRawHits, _p_comptonsoft__MakeRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ObservationPickUpData, _p_comptonsoft__ObservationPickUpDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__PatternGenerator, _p_comptonsoft__PatternGeneratorTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__PhysicsListManager, _p_comptonsoft__PhysicsListManagerTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ProcessCodedAperture, _p_comptonsoft__ProcessCodedApertureTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__QuickAnalysisForDSD, _p_comptonsoft__QuickAnalysisForDSDTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RadioactiveDecayUserActionAssembly, _p_comptonsoft__RadioactiveDecayUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadComptonEventTree, _p_comptonsoft__ReadComptonEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile, _p_comptonsoft__ReadDataFileTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_NB0, _p_comptonsoft__ReadDataFile_NB0To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_NT, _p_comptonsoft__ReadDataFile_NTTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_SpW2, _p_comptonsoft__ReadDataFile_SpW2To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_VME3, _p_comptonsoft__ReadDataFile_VME3To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTree, _p_comptonsoft__ReadEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTreeAsDetectorHits, _p_comptonsoft__ReadEventTreeAsDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTreeAsRawHits, _p_comptonsoft__ReadEventTreeAsRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTree, _p_comptonsoft__ReadHitTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTreeAsDetectorHits, _p_comptonsoft__ReadHitTreeAsDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTreeAsRawHits, _p_comptonsoft__ReadHitTreeAsRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadXrayEventTree, _p_comptonsoft__ReadXrayEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RecalculateEPI, _p_comptonsoft__RecalculateEPITo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RecalculateSimulationNoise, _p_comptonsoft__RecalculateSimulationNoiseTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggered, _p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggeredTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ResponseMatrix, _p_comptonsoft__ResponseMatrixTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SampleOpticalDepth, _p_comptonsoft__SampleOpticalDepthTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SaveData, _p_comptonsoft__SaveDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ScatteringPickUpData, _p_comptonsoft__ScatteringPickUpDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectEventsOnFocalPlane, _p_comptonsoft__SelectEventsOnFocalPlaneTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectEventsWithDetectorSpectrum, _p_comptonsoft__SelectEventsWithDetectorSpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectFullDeposit, _p_comptonsoft__SelectFullDepositTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectHits, _p_comptonsoft__SelectHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectTime, _p_comptonsoft__SelectTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetBadChannels, _p_comptonsoft__SetBadChannelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetBadFrames, _p_comptonsoft__SetBadFramesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetChannelProperties, _p_comptonsoft__SetChannelPropertiesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetDynamicPedestals, _p_comptonsoft__SetDynamicPedestalsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetNoiseLevels, _p_comptonsoft__SetNoiseLevelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetPedestalsByMedian, _p_comptonsoft__SetPedestalsByMedianTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SimulateCXBShieldPlate, _p_comptonsoft__SimulateCXBShieldPlateTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SortEventTreeWithTime, _p_comptonsoft__SortEventTreeWithTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__UniformlyRandomizeEPI, _p_comptonsoft__UniformlyRandomizeEPITo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__VCSModule, _p_comptonsoft__VCSModuleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WeightByInitialDirection, _p_comptonsoft__WeightByInitialDirectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__Write3x3EventTree, _p_comptonsoft__Write3x3EventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteBadPixels, _p_comptonsoft__WriteBadPixelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteComptonEventTree, _p_comptonsoft__WriteComptonEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteEventTree, _p_comptonsoft__WriteEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteHitTree, _p_comptonsoft__WriteHitTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteObservationTree, _p_comptonsoft__WriteObservationTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteXrayEventTree, _p_comptonsoft__WriteXrayEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__XrayEventCollection, _p_comptonsoft__XrayEventCollectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__XrayEventSelection, _p_comptonsoft__XrayEventSelectionTo_p_anlnext__BasicModule, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_anlnext__BasicModule[] = {  {&_swigt__p_anlnext__BasicModule, 0, 0, 0},  {&_swigt__p_anlgeant4__BasicPrimaryGen, _p_anlgeant4__BasicPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__GaussianBeamPrimaryGen, _p_anlgeant4__GaussianBeamPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__Geant4Body, _p_anlgeant4__Geant4BodyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__Geant4Simple, _p_anlgeant4__Geant4SimpleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__IsotropicPrimaryGen, _p_anlgeant4__IsotropicPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__NucleusPrimaryGen, _p_anlgeant4__NucleusPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__NucleusPrimaryGenInVolume, _p_anlgeant4__NucleusPrimaryGenInVolumeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PlaneWavePrimaryGen, _p_anlgeant4__PlaneWavePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PlaneWaveRectanglePrimaryGen, _p_anlgeant4__PlaneWaveRectanglePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PointSourcePrimaryGen, _p_anlgeant4__PointSourcePrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__PrimaryGenUniformSourceInVolume, _p_anlgeant4__PrimaryGenUniformSourceInVolumeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__StandardUserActionAssembly, _p_anlgeant4__StandardUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLGeometry, _p_anlgeant4__VANLGeometryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLPhysicsList, _p_anlgeant4__VANLPhysicsListTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VANLPrimaryGen, _p_anlgeant4__VANLPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VAppendableUserActionAssembly, _p_anlgeant4__VAppendableUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VMasterUserActionAssembly, _p_anlgeant4__VMasterUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_anlgeant4__VUserActionAssembly, _p_anlgeant4__VUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGen, _p_comptonsoft__AHRadiationBackgroundPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTime, _p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ActivationUserActionAssembly, _p_comptonsoft__ActivationUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeDarkFrame, _p_comptonsoft__AnalyzeDarkFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeFrame, _p_comptonsoft__AnalyzeFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AnalyzeHits, _p_comptonsoft__AnalyzeHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ApplyEPICompensation, _p_comptonsoft__ApplyEPICompensationTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AssignG4CopyNumber, _p_comptonsoft__AssignG4CopyNumberTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__AssignTime, _p_comptonsoft__AssignTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__BackProjection, _p_comptonsoft__BackProjectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__BackProjectionSky, _p_comptonsoft__BackProjectionSkyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CSHitCollection, _p_comptonsoft__CSHitCollectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CalculatePedestalLevels, _p_comptonsoft__CalculatePedestalLevelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ComptonEventFilter, _p_comptonsoft__ComptonEventFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ComptonModeFilter, _p_comptonsoft__ComptonModeFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructChannelMap, _p_comptonsoft__ConstructChannelMapTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructDetector, _p_comptonsoft__ConstructDetectorTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructDetectorForSimulation, _p_comptonsoft__ConstructDetectorForSimulationTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ConstructFrame, _p_comptonsoft__ConstructFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CorrectPHA, _p_comptonsoft__CorrectPHATo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__CreateRootFile, _p_comptonsoft__CreateRootFileTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DefineEventDriven, _p_comptonsoft__DefineEventDrivenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DefineFrame, _p_comptonsoft__DefineFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DetectBadFrames, _p_comptonsoft__DetectBadFramesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__DumpMass, _p_comptonsoft__DumpMassTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EfficiencyMapSky, _p_comptonsoft__EfficiencyMapSkyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EventReconstruction, _p_comptonsoft__EventReconstructionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__EventSelection, _p_comptonsoft__EventSelectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ExtractPhotoelectronTrajectory, _p_comptonsoft__ExtractPhotoelectronTrajectoryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ExtractXrayEventImage, _p_comptonsoft__ExtractXrayEventImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__FillFrame, _p_comptonsoft__FillFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__FilterByGoodTimeIntervals, _p_comptonsoft__FilterByGoodTimeIntervalsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__GetInputFilesFromDirectory, _p_comptonsoft__GetInputFilesFromDirectoryTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HXIEventSelection, _p_comptonsoft__HXIEventSelectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__Histogram2DDeltaEnergyWithARM, _p_comptonsoft__Histogram2DDeltaEnergyWithARMTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramARM, _p_comptonsoft__HistogramARMTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramARMByPositionMeasurement, _p_comptonsoft__HistogramARMByPositionMeasurementTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramAzimuthAngle, _p_comptonsoft__HistogramAzimuthAngleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramDecodedImage, _p_comptonsoft__HistogramDecodedImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergy1D, _p_comptonsoft__HistogramEnergy1DTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergy2D, _p_comptonsoft__HistogramEnergy2DTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramEnergySpectrum, _p_comptonsoft__HistogramEnergySpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramFramePedestal, _p_comptonsoft__HistogramFramePedestalTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramPHA, _p_comptonsoft__HistogramPHATo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramRawFrameImage, _p_comptonsoft__HistogramRawFrameImageTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventAzimuthAngle, _p_comptonsoft__HistogramXrayEventAzimuthAngleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventProperties, _p_comptonsoft__HistogramXrayEventPropertiesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__HistogramXrayEventSpectrum, _p_comptonsoft__HistogramXrayEventSpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__InitialConditionFilter, _p_comptonsoft__InitialConditionFilterTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__InitialParticleTree, _p_comptonsoft__InitialParticleTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ListPrimaryGen, _p_comptonsoft__ListPrimaryGenTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadFrame, _p_comptonsoft__LoadFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadReducedFrame, _p_comptonsoft__LoadReducedFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__LoadRootFrame, _p_comptonsoft__LoadRootFrameTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeDetectorHits, _p_comptonsoft__MakeDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess, _p_comptonsoft__MakeDetectorHitsWithTimingProcessTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MakeRawHits, _p_comptonsoft__MakeRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__MyTextOutputModule, _p_comptonsoft__MyTextOutputModuleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ObservationPickUpData, _p_comptonsoft__ObservationPickUpDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__PatternGenerator, _p_comptonsoft__PatternGeneratorTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__PhysicsListManager, _p_comptonsoft__PhysicsListManagerTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ProcessCodedAperture, _p_comptonsoft__ProcessCodedApertureTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__QuickAnalysisForDSD, _p_comptonsoft__QuickAnalysisForDSDTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RadioactiveDecayUserActionAssembly, _p_comptonsoft__RadioactiveDecayUserActionAssemblyTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadComptonEventTree, _p_comptonsoft__ReadComptonEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile, _p_comptonsoft__ReadDataFileTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_NB0, _p_comptonsoft__ReadDataFile_NB0To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_NT, _p_comptonsoft__ReadDataFile_NTTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_SpW2, _p_comptonsoft__ReadDataFile_SpW2To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadDataFile_VME3, _p_comptonsoft__ReadDataFile_VME3To_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTree, _p_comptonsoft__ReadEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTreeAsDetectorHits, _p_comptonsoft__ReadEventTreeAsDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadEventTreeAsRawHits, _p_comptonsoft__ReadEventTreeAsRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTree, _p_comptonsoft__ReadHitTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTreeAsDetectorHits, _p_comptonsoft__ReadHitTreeAsDetectorHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadHitTreeAsRawHits, _p_comptonsoft__ReadHitTreeAsRawHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ReadXrayEventTree, _p_comptonsoft__ReadXrayEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RecalculateEPI, _p_comptonsoft__RecalculateEPITo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RecalculateSimulationNoise, _p_comptonsoft__RecalculateSimulationNoiseTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggered, _p_comptonsoft__RescaleSimulationNoiseOfSGDSiUntriggeredTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ResponseMatrix, _p_comptonsoft__ResponseMatrixTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SampleOpticalDepth, _p_comptonsoft__SampleOpticalDepthTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SaveData, _p_comptonsoft__SaveDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__ScatteringPickUpData, _p_comptonsoft__ScatteringPickUpDataTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectEventsOnFocalPlane, _p_comptonsoft__SelectEventsOnFocalPlaneTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectEventsWithDetectorSpectrum, _p_comptonsoft__SelectEventsWithDetectorSpectrumTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectFullDeposit, _p_comptonsoft__SelectFullDepositTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectHits, _p_comptonsoft__SelectHitsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SelectTime, _p_comptonsoft__SelectTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetBadChannels, _p_comptonsoft__SetBadChannelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetBadFrames, _p_comptonsoft__SetBadFramesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetChannelProperties, _p_comptonsoft__SetChannelPropertiesTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetDynamicPedestals, _p_comptonsoft__SetDynamicPedestalsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetNoiseLevels, _p_comptonsoft__SetNoiseLevelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SetPedestalsByMedian, _p_comptonsoft__SetPedestalsByMedianTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SimulateCXBShieldPlate, _p_comptonsoft__SimulateCXBShieldPlateTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__SortEventTreeWithTime, _p_comptonsoft__SortEventTreeWithTimeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__UniformlyRandomizeEPI, _p_comptonsoft__UniformlyRandomizeEPITo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__VCSModule, _p_comptonsoft__VCSModuleTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WeightByInitialDirection, _p_comptonsoft__WeightByInitialDirectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__Write3x3EventTree, _p_comptonsoft__Write3x3EventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteBadPixels, _p_comptonsoft__WriteBadPixelsTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteComptonEventTree, _p_comptonsoft__WriteComptonEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteEventTree, _p_comptonsoft__WriteEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteHitTree, _p_comptonsoft__WriteHitTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteObservationTree, _p_comptonsoft__WriteObservationTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__WriteXrayEventTree, _p_comptonsoft__WriteXrayEventTreeTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__XrayEventCollection, _p_comptonsoft__XrayEventCollectionTo_p_anlnext__BasicModule, 0, 0},  {&_swigt__p_comptonsoft__XrayEventSelection, _p_comptonsoft__XrayEventSelectionTo_p_anlnext__BasicModule, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__AHRadiationBackgroundPrimaryGen[] = {  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGen, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTime[] = {  {&_swigt__p_comptonsoft__AHRadiationBackgroundPrimaryGenSelectExposureTime, 0, 0, 0},{0, 0, 0, 0}};
@@ -8953,6 +8998,7 @@ static swig_cast_info _swigc__p_comptonsoft__LoadRootFrame[] = {  {&_swigt__p_co
 static swig_cast_info _swigc__p_comptonsoft__MakeDetectorHits[] = {  {&_swigt__p_comptonsoft__MakeDetectorHits, 0, 0, 0},  {&_swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess, _p_comptonsoft__MakeDetectorHitsWithTimingProcessTo_p_comptonsoft__MakeDetectorHits, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__MakeDetectorHitsWithTimingProcess[] = {  {&_swigt__p_comptonsoft__MakeDetectorHitsWithTimingProcess, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__MakeRawHits[] = {  {&_swigt__p_comptonsoft__MakeRawHits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_comptonsoft__MyTextOutputModule[] = {  {&_swigt__p_comptonsoft__MyTextOutputModule, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__ObservationPickUpData[] = {  {&_swigt__p_comptonsoft__ObservationPickUpData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__PatternGenerator[] = {  {&_swigt__p_comptonsoft__PatternGenerator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_comptonsoft__PhysicsListManager[] = {  {&_swigt__p_comptonsoft__PhysicsListManager, 0, 0, 0},{0, 0, 0, 0}};
@@ -9105,6 +9151,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_comptonsoft__MakeDetectorHits,
   _swigc__p_comptonsoft__MakeDetectorHitsWithTimingProcess,
   _swigc__p_comptonsoft__MakeRawHits,
+  _swigc__p_comptonsoft__MyTextOutputModule,
   _swigc__p_comptonsoft__ObservationPickUpData,
   _swigc__p_comptonsoft__PatternGenerator,
   _swigc__p_comptonsoft__PhysicsListManager,
@@ -10206,6 +10253,14 @@ SWIGEXPORT void Init_comptonSoft(void) {
   SwigClassSelectEventsWithDetectorSpectrum.mark = 0;
   SwigClassSelectEventsWithDetectorSpectrum.destroy = (void (*)(void *)) free_comptonsoft_SelectEventsWithDetectorSpectrum;
   SwigClassSelectEventsWithDetectorSpectrum.trackObjects = 0;
+  
+  SwigClassMyTextOutputModule.klass = rb_define_class_under(mComptonSoft, "MyTextOutputModule", ((swig_class *) SWIGTYPE_p_anlnext__BasicModule->clientdata)->klass);
+  SWIG_TypeClientData(SWIGTYPE_p_comptonsoft__MyTextOutputModule, (void *) &SwigClassMyTextOutputModule);
+  rb_define_alloc_func(SwigClassMyTextOutputModule.klass, _wrap_MyTextOutputModule_allocate);
+  rb_define_method(SwigClassMyTextOutputModule.klass, "initialize", VALUEFUNC(_wrap_new_MyTextOutputModule), -1);
+  SwigClassMyTextOutputModule.mark = 0;
+  SwigClassMyTextOutputModule.destroy = (void (*)(void *)) free_comptonsoft_MyTextOutputModule;
+  SwigClassMyTextOutputModule.trackObjects = 0;
   
   SwigClassExtractPhotoelectronTrajectory.klass = rb_define_class_under(mComptonSoft, "ExtractPhotoelectronTrajectory", ((swig_class *) SWIGTYPE_p_comptonsoft__VCSModule->clientdata)->klass);
   SWIG_TypeClientData(SWIGTYPE_p_comptonsoft__ExtractPhotoelectronTrajectory, (void *) &SwigClassExtractPhotoelectronTrajectory);

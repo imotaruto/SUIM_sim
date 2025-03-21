@@ -6,7 +6,7 @@
   <length_unit>cm</length_unit>
   <detectors>
     <detector id="1" type="2DPixel" name="Sensor:1">
-      <geometry x="13.248" y="21.312" z="0.0300"/>
+      <geometry x="1.3248" y="2.1312" z="0.00300"/>
       <offset x="0" y="0"/>
       <pixel number_x="368" number_y="592" size_x="0.0036" size_y="0.0036"/>
       <position x="0.0" y="0.0" z="0.0"/>
@@ -14,7 +14,7 @@
       <yaxis_direction x="0.0" y="+1.0" z="0.0"/>
       <energy_priority electrode_side="anode"/>
       <sections>
-        <section num_channels="1600" electrode_side="anode"/>
+        <section num_channels="" electrode_side="anode"/>
       </sections>
     </detector>
   </detectors>

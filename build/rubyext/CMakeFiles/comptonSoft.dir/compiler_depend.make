@@ -632,6 +632,7 @@ rubyext/CMakeFiles/comptonSoft.dir/CMakeFiles/comptonSoft.dir/comptonSoftRUBY_wr
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/DumpMass.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/InitialParticleTree.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ListPrimaryGen.hh \
+  /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/MyTextOutputModule.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationPickUpData.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationTreeIO.hh \
   /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/ObservationTreeIOWithInitialInfo.hh \
@@ -2563,9 +2564,9 @@ rubyext/CMakeFiles/comptonSoft.dir/CMakeFiles/comptonSoft.dir/comptonSoftRUBY_wr
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/exchange.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/count_if.h:
-
 /usr/local/include/boost/iterator/detail/config_undef.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
 /usr/local/include/boost/mpl/erase_key_fwd.hpp:
 
@@ -5534,6 +5535,8 @@ rubyext/CMakeFiles/comptonSoft.dir/comptonSoftRUBY_wrap.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
+
+/Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/include/MyTextOutputModule.hh:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h:
 

@@ -133,6 +133,7 @@ class ReadSGDEventFITS;
 class WriteSGDEventFITS;
 class ReadHXIEventFITS;
 class WriteHXIEventFITS;
+class MyTextOutputModule;
 class FilterByGoodTimeIntervalsForSGD;
 class FilterByGoodTimeIntervalsForHXI;
 }

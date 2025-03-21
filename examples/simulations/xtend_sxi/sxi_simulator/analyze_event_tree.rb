@@ -6,8 +6,6 @@ class AssignEventTime < ANL::ANLApp
   attr_accessor :inputs, :output
 
   def set_time_info(t0, exposure)
-    @time_start = t0
-    @exposure = exposure
   end
 
   def setup()

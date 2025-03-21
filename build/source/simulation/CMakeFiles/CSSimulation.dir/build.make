@@ -335,6 +335,20 @@ source/simulation/CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.s"
 	cd /Users/itoyamato/Downloads/software/ComptonSoft/build/source/simulation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/src/WriteObservationTree.cc -o CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.s
 
+source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o: source/simulation/CMakeFiles/CSSimulation.dir/flags.make
+source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o: /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/src/MyTextOutputModule.cc
+source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o: source/simulation/CMakeFiles/CSSimulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/itoyamato/Downloads/software/ComptonSoft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o"
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build/source/simulation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o -MF CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o.d -o CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o -c /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/src/MyTextOutputModule.cc
+
+source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.i"
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build/source/simulation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/src/MyTextOutputModule.cc > CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.i
+
+source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.s"
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build/source/simulation && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/itoyamato/Downloads/software/ComptonSoft/source/simulation/src/MyTextOutputModule.cc -o CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.s
+
 # Object files for target CSSimulation
 CSSimulation_OBJECTS = \
 "CMakeFiles/CSSimulation.dir/src/ListPrimaryGen.cc.o" \
@@ -355,7 +369,8 @@ CSSimulation_OBJECTS = \
 "CMakeFiles/CSSimulation.dir/src/InitialParticleTree.cc.o" \
 "CMakeFiles/CSSimulation.dir/src/ObservationTreeIO.cc.o" \
 "CMakeFiles/CSSimulation.dir/src/ObservationTreeIOWithInitialInfo.cc.o" \
-"CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.o"
+"CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.o" \
+"CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o"
 
 # External object files for target CSSimulation
 CSSimulation_EXTERNAL_OBJECTS =
@@ -379,6 +394,7 @@ source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulati
 source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/src/ObservationTreeIO.cc.o
 source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/src/ObservationTreeIOWithInitialInfo.cc.o
 source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/src/WriteObservationTree.cc.o
+source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o
 source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/build.make
 source/simulation/libCSSimulation.dylib: source/modules/libCSModules.dylib
 source/simulation/libCSSimulation.dylib: anlgeant4/libANLGeant4.dylib
@@ -462,7 +478,7 @@ source/simulation/libCSSimulation.dylib: /Users/itoyamato/Downloads/software/Gea
 source/simulation/libCSSimulation.dylib: /Users/itoyamato/Downloads/software/Geant4/geant4-install/lib/libG4zlib.dylib
 source/simulation/libCSSimulation.dylib: /Users/itoyamato/Downloads/software/Geant4/geant4-install/lib/libG4ptl.2.3.3.dylib
 source/simulation/libCSSimulation.dylib: source/simulation/CMakeFiles/CSSimulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/itoyamato/Downloads/software/ComptonSoft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library libCSSimulation.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/itoyamato/Downloads/software/ComptonSoft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libCSSimulation.dylib"
 	cd /Users/itoyamato/Downloads/software/ComptonSoft/build/source/simulation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CSSimulation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Copyright (c) 2013 Tamotsu Sato, Hiro  kazu Odaka                     *
+ * Copyright (c) 2013 Tamotsu Sato, Hiro kazu Odaka                     *
  *                                                                       *
  * This program is free software: you can redistribute it and/or modify  *
  * it under the terms of the GNU General Public License as published by  *
@@ -23,7 +23,9 @@
 #include "TH1.h"
 #include "TGraph.h"
 #include "Randomize.hh"
+#include "G4RandomDirection.hh"  // 乱数による方向生成用
 #include <iostream>
+#include <cmath>
 
 namespace unit = anlgeant4::unit;
 
@@ -118,8 +120,7 @@ anlnext::ANLStatus AHRadiationBackgroundPrimaryGenSelectExposureTime::mod_initia
   std::cout << " -> Normalization factor: " << rate / (1.0 / unit::s) << " particles/s\n" << std::endl;
 
   // 露光時間に対応する期待粒子数を計算
-  const double expectedParticles = rate * exposure_;  // 修正箇所
-
+  const double expectedParticles = rate * exposure_;
   std::cout << "Expected number of particles for exposure time " << exposure_ / unit::s << " s: " << expectedParticles << std::endl;
 
   // シミュレーションで生成する粒子数を、期待粒子数に設定
@@ -138,15 +139,12 @@ G4double AHRadiationBackgroundPrimaryGenSelectExposureTime::sampleEnergy()
 
 anlnext::ANLStatus AHRadiationBackgroundPrimaryGenSelectExposureTime::mod_analyze()
 {
-  // 粒子生成カウンタを増加させ、指定された数に達したらシミュレーションを終了
   if (m_NumParticlesGenerated >= m_TotalParticlesToGenerate) {
     return anlnext::AS_QUIT;
   }
 
-  // 進捗状況をパーセンテージで表示
   double progress = (static_cast<double>(m_NumParticlesGenerated) / m_TotalParticlesToGenerate) * 100.0;
   std::cout << "Particle generation progress: " << progress << " %" << "\r" << std::flush;
-
   m_NumParticlesGenerated++;
 
   return anlgeant4::IsotropicPrimaryGen::mod_analyze();
@@ -154,38 +152,54 @@ anlnext::ANLStatus AHRadiationBackgroundPrimaryGenSelectExposureTime::mod_analyz
 
 anlnext::ANLStatus AHRadiationBackgroundPrimaryGenSelectExposureTime::mod_end_run()
 {
-  // 終了時に改行を追加
   std::cout << std::endl;
 
-  // 面積と立体角の計算
-  const double area = CLHEP::pi * Radius() * Radius(); // 単位は cm^2
-  const double solidAngle = 4 * CLHEP::pi * CoveringFactor(); // 単位は sr
+  const double area = CLHEP::pi * Radius() * Radius();
+  const double solidAngle = 4 * CLHEP::pi * CoveringFactor();
+  const double totalEnergyIntensity = m_integralEnergyIntensity * area * solidAngle;
+  const double totalSimulatedEnergy = TotalEnergy();
+  const double realTime = exposure_;
 
-  // 総エネルギー強度の計算
-  const double totalEnergyIntensity = m_integralEnergyIntensity * area * solidAngle; // 単位は erg/s
-
-  // シミュレーションで生成された総エネルギーを取得
-  const double totalSimulatedEnergy = TotalEnergy(); // 単位は erg
-
-  // リアルタイムの計算
-  const double realTime = exposure_; // 修正箇所：露光時間をそのまま使用
-
-  // 結果の表示
   std::cout << "Total simulated energy: " << totalSimulatedEnergy / unit::erg << " erg" << std::endl;
   std::cout << "Total energy intensity: " << totalEnergyIntensity / (unit::erg / unit::s) << " erg/s" << std::endl;
   std::cout << "Real time corresponding to simulation: " << realTime / unit::s << " s" << std::endl;
 
-  // リアルタイムを設定
   setRealTime(realTime);
-
   return anlnext::AS_OK;
 }
 
+//----------------------------------------------------------------------
+// 修正：
+// 入射位置は固定の100 mm球面上のランダムな点とし、
+// ターゲットディスクは z = 0 の平面上でユーザ指定の radius（Length単位）のディスク内のランダムな点を狙う
+//----------------------------------------------------------------------
+void AHRadiationBackgroundPrimaryGenSelectExposureTime::makePrimarySetting()
+{
+  // --- 入射位置の生成 ---
+  // 固定で半径 100 mm の球面上のランダムな点を選ぶ
+  const G4double injectionSphereRadius = 900.0 * CLHEP::mm; // 固定 100 mm
+  G4ThreeVector center(0.0, 0.0, 0.0);
+  G4ThreeVector injectionPosition = center + injectionSphereRadius * G4RandomDirection();
+
+  // --- ターゲット位置の生成 ---
+  // ターゲットディスク：平面 z = 0、半径はユーザ指定の radius（Length単位）
+  const G4double targetDiskRadius = Radius();
+  const G4double targetZ = 0.0;
+  G4double r_target = targetDiskRadius * std::sqrt(G4UniformRand());
+  G4double phi_target = CLHEP::twopi * G4UniformRand();
+  G4ThreeVector targetPosition(r_target * std::cos(phi_target),
+                               r_target * std::sin(phi_target),
+                               targetZ);
+
+  // --- 運動量方向の設定 ---
+  // 入射位置からターゲット位置への方向を計算
+  G4ThreeVector momentumDirection = (targetPosition - injectionPosition).unit();
+
+  // エネルギーは sampleEnergy() 関数で取得
+  G4double energy = sampleEnergy();
+
+  // プライマリの設定
+  setPrimary(injectionPosition, energy, momentumDirection);
+}
+
 } /* namespace comptonsoft */
-
-
-
-
-
-
-

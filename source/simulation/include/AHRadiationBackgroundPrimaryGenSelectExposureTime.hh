@@ -43,6 +43,8 @@ public:
 
 protected:
   virtual G4double sampleEnergy() override;
+  // 生成位置と運動量方向を設定するメソッド（ベースクラスの実装をオーバーライド）
+  virtual void makePrimarySetting() override;
 
 private:
   std::string m_Filename;
@@ -61,4 +63,3 @@ private:
 } /* namespace comptonsoft */
 
 #endif /* COMPTONSOFT_AHRADIATIONBACKGROUNDPRIMARYGENSELECTEXPOSURETIME_HH */
-

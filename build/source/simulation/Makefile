@@ -439,6 +439,30 @@ src/ListPrimaryGen.cc.s:
 	cd /Users/itoyamato/Downloads/software/ComptonSoft/build && $(MAKE) $(MAKESILENT) -f source/simulation/CMakeFiles/CSSimulation.dir/build.make source/simulation/CMakeFiles/CSSimulation.dir/src/ListPrimaryGen.cc.s
 .PHONY : src/ListPrimaryGen.cc.s
 
+src/MyTextOutputModule.o: src/MyTextOutputModule.cc.o
+.PHONY : src/MyTextOutputModule.o
+
+# target to build an object file
+src/MyTextOutputModule.cc.o:
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build && $(MAKE) $(MAKESILENT) -f source/simulation/CMakeFiles/CSSimulation.dir/build.make source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.o
+.PHONY : src/MyTextOutputModule.cc.o
+
+src/MyTextOutputModule.i: src/MyTextOutputModule.cc.i
+.PHONY : src/MyTextOutputModule.i
+
+# target to preprocess a source file
+src/MyTextOutputModule.cc.i:
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build && $(MAKE) $(MAKESILENT) -f source/simulation/CMakeFiles/CSSimulation.dir/build.make source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.i
+.PHONY : src/MyTextOutputModule.cc.i
+
+src/MyTextOutputModule.s: src/MyTextOutputModule.cc.s
+.PHONY : src/MyTextOutputModule.s
+
+# target to generate assembly for a file
+src/MyTextOutputModule.cc.s:
+	cd /Users/itoyamato/Downloads/software/ComptonSoft/build && $(MAKE) $(MAKESILENT) -f source/simulation/CMakeFiles/CSSimulation.dir/build.make source/simulation/CMakeFiles/CSSimulation.dir/src/MyTextOutputModule.cc.s
+.PHONY : src/MyTextOutputModule.cc.s
+
 src/ObservationPickUpData.o: src/ObservationPickUpData.cc.o
 .PHONY : src/ObservationPickUpData.o
 
@@ -677,6 +701,9 @@ help:
 	@echo "... src/ListPrimaryGen.o"
 	@echo "... src/ListPrimaryGen.i"
 	@echo "... src/ListPrimaryGen.s"
+	@echo "... src/MyTextOutputModule.o"
+	@echo "... src/MyTextOutputModule.i"
+	@echo "... src/MyTextOutputModule.s"
 	@echo "... src/ObservationPickUpData.o"
 	@echo "... src/ObservationPickUpData.i"
 	@echo "... src/ObservationPickUpData.s"
