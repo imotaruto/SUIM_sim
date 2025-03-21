@@ -2,3 +2,5 @@
 .DS_Store
 build/
 install/
+examples/simulations/suim_xrpix/xrpix_simulator/events.root
+examples/simulations/suim_xrpix/xrpix_simulator/events_time.root
