@@ -4,3 +4,6 @@ build/
 install/
 examples/simulations/suim_xrpix/xrpix_simulator/events.root
 examples/simulations/suim_xrpix/xrpix_simulator/events_time.root
+examples/simulations/xtend_sxi/sxi_simulator/events_frame.root
+examples/simulations/suim_xrpix/xrpix_simulator/events.root
+examples/simulations/suim_xrpix/xrpix_simulator/events_time.root
